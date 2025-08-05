@@ -34,21 +34,3 @@ Variables clave analizadas: `education`, `balance`, `y` (respuesta).
 
 Aunque el dataset fue descargado manualmente desde el repositorio [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/bank+marketing), se incluye un ejemplo simulado de cómo se obtendrían los datos desde una API pública, cumpliendo con las consignas del curso:
 
-```python
-### 🔽 Ejemplo de cómo se obtendrían los datos desde una API pública
-# (Previamente consultado con el docente, quien indicó que debía incluir los comandos de cómo citar una API)
-
-import requests
-import pandas as pd
-
-# URL ficticia para simulación de llamada a API
-url = "https://api.ejemplo.gov/banco/marketing"
-params = {"formato": "csv"}
-
-# response = requests.get(url, params=params)
-# with open("datos_marketing.csv", "wb") as f:
-#     f.write(response.content)
-
-# Leemos el dataset previamente descargado
-df = pd.read_csv("bank-full.csv")
-df.head()
